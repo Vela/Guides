@@ -3,6 +3,7 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
+* [Git](/git)
 * [Code Review](/code-review)
 * [Style](/style)
 
