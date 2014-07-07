@@ -18,9 +18,9 @@ Maintain a Repo
 Write a Feature
 ---------------
 
-Create a local feature branch based off master.
+Create a local feature branch based off develop.
 
-    git checkout master
+    git checkout develop
     git pull
     git checkout -b <branch-name>
 
@@ -29,7 +29,7 @@ Prefix the branch name with your initials.
 Rebase frequently to incorporate upstream changes.
 
     git fetch origin
-    git rebase origin/master
+    git rebase origin/develop
 
 Resolve conflicts. When feature is complete and tests pass, stage the changes.
 
@@ -52,7 +52,7 @@ Write a [good commit message]. Example format:
 If you've created more than one commit, use a rebase to squash them into
 cohesive commits with good messages:
 
-    git rebase -i origin/master
+    git rebase -i origin/develop
 
 Share your branch.
 
@@ -79,7 +79,7 @@ For changes which they can make themselves, they check out the branch.
 
     git checkout <branch-name>
     ./bin/setup
-    git diff staging/master..HEAD
+    git diff staging/develop..HEAD
 
 They make small changes right in the branch, test the feature on their machine,
 run tests, commit, and push.
@@ -94,19 +94,19 @@ small number of valuable commit(s). Edit commit messages to reveal intent. Run
 tests.
 
     git fetch origin
-    git rebase -i origin/master
+    git rebase -i origin/develop
 
 Force push your branch. This allows GitHub to automatically close your pull
-request and mark it as merged when your commit(s) are pushed to master. It also
+request and mark it as merged when your commit(s) are pushed to develop. It also
  makes it possible to [find the pull request] that brought in your changes.
 
     git push --force origin <branch-name>
 
-View a list of new commits. View changed files. Merge branch into master.
+View a list of new commits. View changed files. Merge branch into develop.
 
-    git log origin/master..<branch-name>
-    git diff --stat origin/master
-    git checkout master
+    git log origin/develop..<branch-name>
+    git diff --stat origin/develop
+    git checkout develop
     git merge <branch-name> --ff-only
     git push
 
