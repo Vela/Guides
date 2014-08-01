@@ -65,6 +65,38 @@ Organization
 * Order methods so that methods are as close as possible to other methods they
   call.
 
+JavaScript
+----------
+
+* Prefer CoffeeScript for new and refactored code.
+* Prefer Angular for new code.
+* Actively replace Prototype code with jQuery, where possible, while working on new features or refactoring.
+
+### AJAX
+* Prefer Angular $http or $resource when in Angular code.
+* Prefer jQuery over Prototype everywhere else.
+
+### Data Manipulation
+* Prefer Angular methods over Underscore when in Angular code.
+  Use `Angular.forEach()` instead of `_.each()`.
+* Prefer [Underscore](http://underscorejs.org/) methods over jQuery (... over Prototype).
+
+CoffeeScript
+------------
+
+* Avoid conditional modifiers (lines that end with conditionals).
+* Initialize arrays using `[]`.
+* Initialize empty objects and hashes using `{}`.
+* Use hyphen-separated filenames, such as `coffee-script.coffee`.
+* Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
+  `SCREAMING_SNAKE_CASE` for constants, `_single_leading_underscore` for
+  private variables and functions.
+* Prefer `==` and `!=` to `is` and `isnt`.
+* Prefer `||` and `&&` to `or` and `and`.
+* Prefer `!` over `not`.
+* Prefer `@` over `this` for referencing instance properties.
+* Prefer double quotes.
+
 Sass
 ----
 ### Formatting
