@@ -70,16 +70,21 @@ JavaScript
 
 * Prefer CoffeeScript for new and refactored code.
 * Prefer Angular for new code.
-* Actively replace Prototype code with jQuery, where possible, while working on new features or refactoring.
+* Actively replace Prototype.js code with jQuery, where possible, while working on new features or refactoring.
 
 ### AJAX
-* Prefer Angular $http or $resource when in Angular code.
-* Prefer jQuery over Prototype everywhere else.
+* Prefer Angular `$http` or `$resource` when in Angular code.
+* Prefer jQuery everywhere else.
+* Don't use Prototype.js methods.
+
+[Sample](/samples/javascript.js#L1)
 
 ### Data Manipulation
-* Prefer Angular methods over Underscore when in Angular code.
-  Use `Angular.forEach()` instead of `_.each()`.
-* Prefer [Underscore](http://underscorejs.org/) methods over jQuery (... over Prototype).
+* Prefer [Angular](https://docs.angularjs.org/api) methods over [Underscore](http://underscorejs.org/) when in Angular code.
+* Prefer [Underscore](http://underscorejs.org/) methods over jQuery.
+* Don't use Prototype.js methods.
+
+[Sample](/samples/javascript.js#L22)
 
 CoffeeScript
 ------------
