@@ -86,8 +86,13 @@ JavaScript
 
 [Sample](/samples/javascript.js#L22)
 
-CoffeeScript
-------------
+### Angular
+
+* Module declarations should be both readable and concise
+
+[Sample](/samples/coffeescript.coffee#L1)
+
+### CoffeeScript
 
 * Avoid conditional modifiers (lines that end with conditionals).
 * Initialize arrays using `[]`.
