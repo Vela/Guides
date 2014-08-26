@@ -126,8 +126,8 @@ Sass
 
 ### Order
 * Use alphabetical order for declarations.
-    * Declarations with directions (`border-top`, `border-right`) should be grouped clock-wise from `top`.
-    * `top`, `right`, `bottom`, `left` should be grouped after the alphabetized list.
+* Declarations with directions (`border-top`, `border-right`) should be grouped clock-wise from `top`.
+* `top`, `right`, `bottom`, `left` should be grouped after the alphabetized list.
 * Place @extends and @includes at the top of your declaration list.
 * Place media queries directly after the declaration list.
 * Place concatenated selectors second.
