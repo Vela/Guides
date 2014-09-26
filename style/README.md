@@ -96,6 +96,16 @@ JavaScript
 ### CoffeeScript
 
 * Avoid conditional modifiers (lines that end with conditionals).
+* Break up long lines with trailing dot-notation
+```JavaScript
+# bad
+$http.get("/api/route", params).success(successHandler).error(errorHandler)
+
+# good
+$http.get("/api/route", params).
+  success(successHandler).
+  error(errorHandler)
+```
 * Initialize arrays using `[]`.
 * Initialize empty objects and hashes using `{}`.
 * Use hyphen-separated filenames, such as `coffee-script.coffee`.
@@ -183,6 +193,16 @@ It's easy and low value to point out a that `&:method_name` should be used inste
 * Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
   instead to emphasize code branches.
+* Break up long lines with trailing dot-notation
+```Ruby
+# bad
+User.includes(includes).where(account_id: @project.account_id).order("first_name ASC")
+
+# good
+User.includes(includes).
+  where(account_id: @project.account_id).
+  order("first_name ASC")
+```
 * Avoid explicit return statements.
 * Avoid using semicolons.
 * Avoid bang (!) method names. Prefer descriptive names.
@@ -210,12 +230,8 @@ It's easy and low value to point out a that `&:method_name` should be used inste
   item. [Example][trailing comma example]
 * Use heredocs for multi-line strings.
 
-[trailing comma example]: /style/samples/ruby.rb#L45
-
 ERb
 ---
-
-[Sample](samples/erb.rb)
 
 * When wrapping long lines, keep the method name on the same line as the ERb
   interpolation operator and keep each method argument on its own line.
@@ -253,9 +269,6 @@ Rails Migrations
   fields. [Example][default example].
 * List timestamps first when creating a new table. [Example][timestamps
   example].
-
-[timestamps example]: /style/samples/migration.rb
-[default example]: /style/samples/migration.rb#L6
 
 Rails Routes
 ------------
@@ -299,8 +312,6 @@ Testing
 
 #### Acceptance Tests
 
-[Sample](samples/acceptance_test.rb)
-
 * Avoid scenario titles that add no information, such as "successfully."
 * Avoid scenario titles that repeat the feature title.
 * Place helper methods for feature specs directly in a top-level `Features`
@@ -322,8 +333,6 @@ Testing
 * Use one factories.rb file per project.
 
 #### Unit Tests
-
-[Sample](samples/testing.rb)
 
 * Don't prefix `it` block descriptions with `should`. Use [Imperative mood]
   instead.
