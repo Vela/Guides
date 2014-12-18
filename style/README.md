@@ -160,6 +160,21 @@ Sass
 Ruby
 ----
 
+### Sandi Metz's Rules
+
+These should be treated as strong guidelines for new code and a goal to refactor towards for existing code. See [thoughtbot's article](http://robots.thoughtbot.com/sandi-metz-rules-for-developers) for a good discussion of these rules. If you're going to break them, you need to have a good reason, which should be discussed with the team in your pull request. 
+
+1. Classes can be no longer than one hundred lines of code.
+2. Methods can be no longer than five lines of code.
+3. Pass no more than four parameters into a method. Hash options are parameters.
+4. Controllers can instantiate only one object. Therefore, views can only know about one instance variable and views should only send messages to that object (@object.collaborator.value is not allowed).
+
+### Ruby Style
+
+The below points contribute to uniform code that is easy to read, but remember that these are the low-hanging fruit of writing good code. When reviewing others' pull requests, if they are in violation of one of Sandi Metz's Rules, keep the discussion centered on how to fix that rather than around stylistic elements. 
+
+It's easy and low value to point out a that `&:method_name` should be used instead of `{ |item| item.method_name }`; it's much higher value (and more challenging) to discuss how to break up a class that has grown to have too much responsibility.
+
 [Sample](samples/ruby.rb)
 
 * Avoid conditional modifiers (lines that end with conditionals).
