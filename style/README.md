@@ -74,6 +74,7 @@ JavaScript
 
 ### AJAX
 * Prefer Angular `$http` or `$resource` when in Angular code.
+* Avoid direct use of `$http` in Angular controllers—extract the requests to service objects instead.
 * Prefer jQuery everywhere else.
 * Don't use Prototype.js methods.
 
