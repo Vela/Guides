@@ -351,7 +351,6 @@ Legacy Code
 -----------
 ### Rails
 
-* Use the [deprecate module] in Rails to deprecate code. Make
-* Also a readable comment in the code, if you are not going to generate a warning
+* Use the [deprecate module] in Rails to deprecate methods.
 
 [deprecate module]: http://apidock.com/rails/v3.2.8/Module/deprecate
