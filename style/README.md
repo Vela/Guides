@@ -346,3 +346,11 @@ Testing
   appear in the class.
 
 [Imperative mood]: http://en.wikipedia.org/wiki/Imperative_mood
+
+Legacy Code
+-----------
+### Rails
+
+* Use the [deprecate module] in Rails to deprecate methods.
+
+[deprecate module]: http://apidock.com/rails/v3.2.8/Module/deprecate
