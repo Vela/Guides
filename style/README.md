@@ -19,7 +19,10 @@ Formatting
 
 * Avoid inline comments.
 * Break long lines after 80 characters.
-* Delete trailing whitespace.
+* Delete trailing whitespace. Your editor should be configured to do so automatically:
+  * [Sublime Text](http://nategood.com/sublime-text-strip-whitespace-save)
+  * [Vim](http://vim.wikia.com/wiki/Remove_unwanted_spaces)
+  * [Atom](https://github.com/atom/whitespace)
 * Don't include spaces after `(`, `[` or before `]`, `)`.
 * Don't misspell.
 * Don't vertically align tokens on consecutive lines.
