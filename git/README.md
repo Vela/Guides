@@ -97,15 +97,14 @@ tests.
     git rebase -i origin/develop
 
 Force push your branch. This allows GitHub to automatically close your pull
-request and mark it as merged when your commit(s) are pushed to develop. It also
- makes it possible to [find the pull request] that brought in your changes.
+request and mark it as merged when your commit(s) are pushed to develop. It also makes it possible to [find the pull request] that brought in your changes.
 
     git push --force origin <branch-name>
 
-View a list of new commits. View changed files. Merge branch into develop.
+Use a tool like [GitX](http://rowanj.github.io/gitx/), [GitHub Mac](https://mac.github.com/), or [SourceTree](http://www.sourcetreeapp.com/) to inspect your changes. Make sure you're only merging what you intend.
 
-    git log origin/develop..<branch-name>
-    git diff --stat origin/develop
+Merge branch into develop.
+
     git checkout develop
     git merge <branch-name> --ff-only
     git push
