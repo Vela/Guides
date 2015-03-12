@@ -47,6 +47,12 @@ Formatting
 [uppercase for SQL key words and lowercase for SQL identifiers]: http://www.postgresql.org/docs/9.2/static/sql-syntax-lexical.html#SQL-SYNTAX-IDENTIFIERS
 [Unix-style line endings]: http://unix.stackexchange.com/questions/23903/should-i-end-my-text-script-files-with-a-newline
 
+File Names
+----------
+
+* Separate words using underscores, not dashes (`user_settings.coffee`, not `user-settings.coffee`)
+* Avoid multiple filetypes (`user_settings.coffee`, not `user_settings.js.coffee`)
+
 Naming
 ------
 
