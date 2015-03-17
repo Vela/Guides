@@ -37,6 +37,10 @@ Localization
 ------------
 
 * Use the `Accept-Language` HTTP header.
+* Localize data values on the client, not the server.
+* Return date and times in [ISO-8601] format.
+
+[ISO-8601]: https://en.wikipedia.org/wiki/ISO_8601
 
 Errors
 ------
