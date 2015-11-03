@@ -197,7 +197,27 @@ It's easy and low value to point out a that `&:method_name` should be used inste
 
 [Sample](/samples/ruby.rb)
 
-* Avoid conditional modifiers (lines that end with conditionals).
+* Avoid conditional modifiers on non-trivial code (lines that end with conditionals).
+```Ruby
+# bad
+result = some_condition || some_other_condition if (something || some_other_thing)
+
+# good
+if something || some_other_thing
+  result = some_condition || some_other_condition
+end
+
+# bad
+if some_condition
+  do_something
+end
+
+# good
+do_something if some_condition
+
+# also fine
+return if some_condition
+```
 * Avoid multiple assignments per line (`one, two = 1, 2`).
 * Avoid organizational comments (`# Validations`).
 * Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
